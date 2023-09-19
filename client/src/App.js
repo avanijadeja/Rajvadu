@@ -16,6 +16,8 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import OnlineOrder from "./pages/OnlineOrder";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+
 import DeliveryApps from "./pages/DeliveryApps";
 import Catering from "./pages/Caterning";
 import Contact from "./pages/Contact";
@@ -59,7 +61,9 @@ function App() {
         </Routes>
         {/* </Provider> */}
       </div>
+      <Footer />
     </Router>
+
     // </ApolloProvider>
   );
 }
