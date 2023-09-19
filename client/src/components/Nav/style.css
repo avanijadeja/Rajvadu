@@ -1,4 +1,10 @@
-header{
+.info {
+  padding-left: 40px;
+  background-color: aquamarine;
+  color: black;
+}
+
+header {
   justify-content: space-between;
 }
 li {

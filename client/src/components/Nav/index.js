@@ -35,15 +35,18 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-          <h1>Rajvadu</h1>
-        </Link>
-      </h1>
+    <>
+      <h5 class="info">(512)333 4444 rajvadu.austin@gmail.com</h5>
+      <header className="flex-row px-1">
+        <h1>
+          <Link to="/">
+            <h1>Rajvadu</h1>
+          </Link>
+        </h1>
 
-      <nav>{showNavigation()}</nav>
-    </header>
+        <nav>{showNavigation()}</nav>
+      </header>
+    </>
   );
 }
 
