@@ -6,25 +6,23 @@ import {
   ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
+// import { setContext } from "@apollo/client/link/context";
 import { Provider } from "react-redux";
-import store from "./utils/store"
-
+// import store from "./utils/store"
 
 import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
-import Detail from "./pages/Detail";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import OnlineOrder from "./pages/OnlineOrder";
 import Nav from "./components/Nav";
-import Success from "./pages/Success";
-import OrderHistory from "./pages/OrderHistory";
-
+import DeliveryApps from "./pages/DeliveryApps";
+import Catering from "./pages/Caterning";
+import Contact from "./pages/Contact";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
 });
-
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem("id_token");
@@ -35,7 +33,6 @@ const authLink = setContext((_, { headers }) => {
     },
   };
 });
-
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
@@ -51,11 +48,12 @@ function App() {
             <Nav />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/success" element={<Success />} />
-              <Route path="/orderHistory" element={<OrderHistory />} />
-              <Route path="/products/:id" element={<Detail />} />
+              <Route path="/login" element={<About />} />
+              <Route path="/signup" element={<Gallery />} />
+              <Route path="/success" element={<OnlineOrder />} />
+              <Route path="/orderHistory" element={<DeliveryApps />} />
+              <Route path="/products/:id" element={<Catering />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </Provider>
