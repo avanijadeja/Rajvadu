@@ -12,6 +12,7 @@ import store from "./utils/store"
 
 
 import Home from "./pages/Home";
+import NoMatch from "./pages/NoMatch";
 import Detail from "./pages/Detail";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
