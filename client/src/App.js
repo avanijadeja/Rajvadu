@@ -42,23 +42,24 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     // <ApolloProvider client={client}>
-      <Router>
-        <div>
-          {/* <Provider store={store}> */}
-            <Nav />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<About />} />
-              <Route path="/signup" element={<Gallery />} />
-              <Route path="/success" element={<OnlineOrder />} />
-              <Route path="/orderHistory" element={<DeliveryApps />} />
-              <Route path="/products/:id" element={<Catering />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NoMatch />} />
-            </Routes>
-          {/* </Provider> */}
-        </div>
-      </Router>
+    <Router>
+      <div>
+        {/* <Provider store={store}> */}
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/OnlineOrder" element={<OnlineOrder />} />
+          <Route path="/DeliveryApps" element={<DeliveryApps />} />
+          <Route path="/Catering" element={<Catering />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+        {/* </Provider> */}
+      </div>
+    </Router>
     // </ApolloProvider>
   );
 }

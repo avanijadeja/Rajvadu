@@ -7,7 +7,7 @@ function Nav() {
   function showNavigation() {
     return (
       <div class="Navbarcss">
-        <ul>
+        <ul className="flex-row">
           <li className="mx-1">
             <Link to="/Home.js">HOME</Link>
           </li>
