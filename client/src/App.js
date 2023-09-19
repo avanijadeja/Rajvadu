@@ -47,7 +47,7 @@ function App() {
         {/* <Provider store={store}> */}
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Gallery" element={<Gallery />} />
