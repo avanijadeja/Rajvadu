@@ -1,5 +1,6 @@
 import React from "react";
 // import Auth from "../../utils/auth";
+import "./style.css";
 import { Link } from "react-router-dom";
 
 function Nav() {
