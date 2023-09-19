@@ -9,25 +9,25 @@ function Nav() {
       <div class="Navbarcss">
         <ul className="flex-row">
           <li className="mx-1">
-            <Link to="/Home.js">HOME</Link>
+            <Link to="/Home">HOME</Link>
           </li>
           <li className="mx-1">
-            <Link to="/About.js">ABOUT</Link>
+            <Link to="/About">ABOUT</Link>
           </li>
           <li className="mx-1">
-            <Link to="/Gallery.js">GALLERY</Link>
+            <Link to="/Gallery">GALLERY</Link>
           </li>
           <li className="mx-1">
-            <Link to="/OnlineOrder.js">ONLINE ORDER</Link>
+            <Link to="/OnlineOrder">ONLINE ORDER</Link>
           </li>
           <li className="mx-1">
-            <Link to="/DeliveryApps.js">DELIVERY APPS</Link>
+            <Link to="/DeliveryApps">DELIVERY APPS</Link>
           </li>
           <li className="mx-1">
-            <Link to="/Caterning.js">CATERNING</Link>
+            <Link to="/Caterning">CATERNING</Link>
           </li>
           <li className="mx-1">
-            <Link to="/Contact.js">CONTACT</Link>
+            <Link to="/Contact">CONTACT</Link>
           </li>
         </ul>
       </div>
