@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from "@apollo/client";
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   createHttpLink,
+// } from "@apollo/client";
 // import { setContext } from "@apollo/client/link/context";
-import { Provider } from "react-redux";
+// import { Provider } from "react-redux";
 // import store from "./utils/store"
 
 import Home from "./pages/Home";
@@ -20,31 +20,31 @@ import DeliveryApps from "./pages/DeliveryApps";
 import Catering from "./pages/Caterning";
 import Contact from "./pages/Contact";
 
-const httpLink = createHttpLink({
-  uri: "/graphql",
-});
+// const httpLink = createHttpLink({
+//   uri: "/graphql",
+// });
 
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem("id_token");
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : "",
-    },
-  };
-});
+// const authLink = setContext((_, { headers }) => {
+//   const token = localStorage.getItem("id_token");
+//   return {
+//     headers: {
+//       ...headers,
+//       authorization: token ? `Bearer ${token}` : "",
+//     },
+//   };
+// });
 
-const client = new ApolloClient({
-  link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
-});
+// const client = new ApolloClient({
+//   link: authLink.concat(httpLink),
+//   cache: new InMemoryCache(),
+// });
 
 function App() {
   return (
-    <ApolloProvider client={client}>
+    // <ApolloProvider client={client}>
       <Router>
         <div>
-          <Provider store={store}>
+          {/* <Provider store={store}> */}
             <Nav />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -56,10 +56,10 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
-          </Provider>
+          {/* </Provider> */}
         </div>
       </Router>
-    </ApolloProvider>
+    // </ApolloProvider>
   );
 }
 
