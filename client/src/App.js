@@ -45,23 +45,27 @@ function App() {
   return (
     // <ApolloProvider client={client}>
     <Router>
-      <div>
-        {/* <Provider store={store}> */}
-        <Nav />
-        <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/OnlineOrder" element={<OnlineOrder />} />
-          <Route path="/DeliveryApps" element={<DeliveryApps />} />
-          <Route path="/Catering" element={<Catering />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="*" element={<NoMatch />} />
-        </Routes>
-        {/* </Provider> */}
+      {/* <Provider store={store}> */}
+      <div className="page-container">
+        <div className="content-wrap">
+          {" "}
+          <Nav />
+          <Routes>
+            <Route path="/Home" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/OnlineOrder" element={<OnlineOrder />} />
+            <Route path="/DeliveryApps" element={<DeliveryApps />} />
+            <Route path="/Catering" element={<Catering />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="*" element={<NoMatch />} />
+          </Routes>
+          {/* </Provider> */}
+        </div>
+
+        <Footer />
       </div>
-      <Footer />
     </Router>
 
     // </ApolloProvider>
