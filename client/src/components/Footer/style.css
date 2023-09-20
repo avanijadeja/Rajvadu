@@ -1,13 +1,24 @@
 .main-footer {
   color: --light;
-  background-color: --dark;
+  background-color: red;
   padding-top: 3em;
   position: relative;
   bottom: 0;
   width: 100%;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
   text-decoration: none;
-  display: inline-block;
+  display: block;
+  text-align: center;
+}
+
+.col-sm {
+  text-align: center;
 }

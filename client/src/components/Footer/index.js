@@ -20,7 +20,17 @@ const Footer = () => {
           <div className="col">
             <h4>SOCIAL LINKS</h4>
             <ul className="list-unstyled">
-              <li></li>
+              <li>
+                <FontAwesomeIcon icon="fa-brands fa-square-facebook" />{" "}
+                <FontAwesomeIcon
+                  icon="fa-brands fa-square-twitter"
+                  style={{ color: "#00affa" }}
+                />{" "}
+                <FontAwesomeIcon
+                  icon="fa-brands fa-square-instagram"
+                  style={{ color: "#a72a2a" }}
+                />
+              </li>
             </ul>
           </div>
           <div className="col">
@@ -35,12 +45,6 @@ const Footer = () => {
               <li> Please ask the associate for details. </li>
             </ul>
           </div>
-        </div>
-        <hr />
-        <div className="row">
-          <p className="col-sm">
-            &copy; (new Date().getFullYear() | All rights reserved)
-          </p>
         </div>
       </div>
     </div>
