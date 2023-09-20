@@ -6,3 +6,9 @@
   bottom: 0;
   width: 100%;
 }
+
+li {
+  text-decoration: none;
+  display: inline-block;
+  color: --dark;
+}
