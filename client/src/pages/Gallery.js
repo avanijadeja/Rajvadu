@@ -4,8 +4,9 @@ import food1 from "../assets/images/food1.jpeg";
 
 const Gallery = () => {
   return (
-    <div className="Gallery" style={{ backgroundImage: `url(${food1})` }}>
-      <h1>Gallery</h1>
+    <div className="Gallery">
+      <img src ={food1} alt="food1" />
+      <h1 id="gallery">Gallery</h1>
     </div>
   );
 };

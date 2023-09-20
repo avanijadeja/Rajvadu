@@ -11,5 +11,9 @@
 }
 
 .Gallery {
-  height: calc(100vh-100px);
+  background-size: cover;
+}
+
+#gallery h1 {
+  text-align: center;
 }
