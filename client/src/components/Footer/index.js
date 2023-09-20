@@ -1,5 +1,6 @@
 import React from "react";
 // import Auth from "../../utils/auth";
+
 import "./style.css";
 
 const Footer = () => {
@@ -21,15 +22,9 @@ const Footer = () => {
             <h4>SOCIAL LINKS</h4>
             <ul className="list-unstyled">
               <li>
-                <FontAwesomeIcon icon="fa-brands fa-square-facebook" />{" "}
-                <FontAwesomeIcon
-                  icon="fa-brands fa-square-twitter"
-                  style={{ color: "#00affa" }}
-                />{" "}
-                <FontAwesomeIcon
-                  icon="fa-brands fa-square-instagram"
-                  style={{ color: "#a72a2a" }}
-                />
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
               </li>
             </ul>
           </div>
