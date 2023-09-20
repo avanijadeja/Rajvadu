@@ -36,7 +36,7 @@ function Nav() {
 
   return (
     <>
-      <h5 class="info">(512)333 4444 rajvadu.austin@gmail.com</h5>
+      <p class="info">(512)333 4444 rajvadu.austin@gmail.com</p>
       <header className="flex-row px-1">
         <h1>
           <Link to="/">

@@ -1,12 +1,15 @@
 .info {
   padding-left: 40px;
-  background-color: aquamarine;
-  color: black;
+  margin-bottom: 0px;
+  background-color: red;
+  color: yellow;
 }
 
 header {
   justify-content: space-between;
+  background-color: black;
 }
+
 li {
   text-decoration: none;
   display: inline-block;

@@ -1,8 +1,8 @@
 .main-footer {
-  color: --light;
-  background-color: red;
+  color: Red;
+  background-color: black;
   padding-top: 3em;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;

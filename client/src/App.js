@@ -19,7 +19,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 import DeliveryApps from "./pages/DeliveryApps";
-import Catering from "./pages/Caterning";
+import Catering from "./pages/Catering";
 import Contact from "./pages/Contact";
 
 // const httpLink = createHttpLink({
