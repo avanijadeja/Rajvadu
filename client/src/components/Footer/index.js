@@ -1,5 +1,9 @@
 import React from "react";
 // import Auth from "../../utils/auth";
+// import { FaFacebookF } from "react-icons/fa";
+import { AiFillFacebook } from "react-icons/ai";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 
 import "./style.css";
 
@@ -22,9 +26,9 @@ const Footer = () => {
             <h4>SOCIAL LINKS</h4>
             <ul className="list-unstyled">
               <li>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-twitter"></i>
-                <i class="fa-brands fa-square-instagram"></i>
+                <AiFillFacebook size={28} />
+                <AiFillTwitterCircle size={28} />
+                <AiFillInstagram size={28} />
               </li>
             </ul>
           </div>
