@@ -1,3 +1,27 @@
+:root {
+  --primary: #219c90;
+  --secondary: #e9b824;
+  --ternary: #ee9322;
+  --light: white;
+  --dark: #d83f31;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+}
+
+.App {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -8,12 +32,4 @@
 .content-wrap {
   margin-top: auto;
   /* flex: 1; */
-}
-
-.Gallery {
-  background-size: cover;
-}
-
-#gallery h1 {
-  text-align: center;
 }
