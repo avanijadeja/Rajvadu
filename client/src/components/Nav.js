@@ -9,7 +9,6 @@ function Nav() {
       <div class="Navbarcss">
         <ul className="flex-row">
           <li className="mx-1">
-            
             <Link to="/">HOME</Link>
           </li>
           <li className="mx-1">
@@ -25,7 +24,7 @@ function Nav() {
             <Link to="/DeliveryApps">DELIVERY APPS</Link>
           </li>
           <li className="mx-1">
-            <Link to="/Caterning">CATERNING</Link>
+            <Link to="/Catering">CATERNING</Link>
           </li>
           <li className="mx-1">
             <Link to="/Contact">CONTACT</Link>
@@ -46,7 +45,6 @@ function Nav() {
         </h1>
 
         <nav>{showNavigation()}</nav>
-        
       </header>
     </>
   );

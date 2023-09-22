@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import {
 //   ApolloClient,
@@ -49,7 +49,6 @@ function App() {
       {/* <Provider store={store}> */}
       <div className="page-container">
         <div className="content-wrap">
- 
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
