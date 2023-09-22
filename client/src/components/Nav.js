@@ -46,6 +46,7 @@ function Nav() {
         </h1>
 
         <nav>{showNavigation()}</nav>
+        
       </header>
     </>
   );

@@ -6,6 +6,49 @@
   align-items: center;
   flex-direction: column;
 }
+
+/* .about {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+.galleryTop {
+  opacity: 80%;
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galleryHeader {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  size: 100px;
+  color: yellow;
+}
+
+.galleryHeader h3 {
+  color: navy;
+  font-style: italic;
+  font-size: 3.67em;
+}
+
+.galleryHeader h1 {
+  margin-top: 20px;
+  color: white;
+  font-style: bold;
+  font-size: 6.67em;
+}
+
+.agalleryHeader icon {
+  align-items: center;
+}
+
 .gallery .galleryTitle {
   font-family: cursive;
   font-size: 60px;

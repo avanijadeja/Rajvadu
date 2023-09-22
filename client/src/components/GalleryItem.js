@@ -1,6 +1,6 @@
 import React from "react";
 
-function GalleryItem({ image, name, price }) {
+function GalleryItem({ image }) {
   return (
     <div className="galleryItem">
       <div style={{ backgroundImage: `url(${image})` }}> </div>
