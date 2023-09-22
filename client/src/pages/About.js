@@ -4,8 +4,8 @@ import "../styles/About.css";
 
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
+    <div className="about">
+    <div className="aboutTop" style={{backgroundImage:`url(${food1})`}}></div>
      
     </div>
   );
