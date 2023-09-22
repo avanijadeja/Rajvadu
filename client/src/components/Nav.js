@@ -1,6 +1,6 @@
 import React from "react";
 // import Auth from "../../utils/auth";
-import "./style.css";
+import "../styles/Nav.css";
 import { Link } from "react-router-dom";
 
 function Nav() {
@@ -37,7 +37,7 @@ function Nav() {
   return (
     <>
       <p class="info">(512)333 4444 rajvadu.austin@gmail.com</p>
-      <header className="flex-row px-1">
+      <header className="headerInfo">
         <h1>
           <Link to="/">
             <h1>Rajvadu</h1>

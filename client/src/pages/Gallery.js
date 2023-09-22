@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillLayout } from "react-icons/ai";
-import food1 from "../assets/images/food1.jpeg";
-import "./Gallery.css";
+import food1 from "../assets/food1.jpeg";
+import "../styles/Gallery.css";
 
 const Gallery = () => {
   return (
