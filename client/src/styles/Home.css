@@ -1,0 +1,11 @@
+.homeimages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.homeheading {
+  align-items: center;
+}
