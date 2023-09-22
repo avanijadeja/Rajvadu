@@ -9,6 +9,7 @@ function Nav() {
       <div class="Navbarcss">
         <ul className="flex-row">
           <li className="mx-1">
+            
             <Link to="/">HOME</Link>
           </li>
           <li className="mx-1">
