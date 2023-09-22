@@ -82,38 +82,40 @@ function About() {
           food.
         </h4>
       </div>
-      <Slider {...settings}>
-        <div>
-          <img src={main1} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main2} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main3} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main4} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main5} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main6} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main7} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main8} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main9} alt="imagemain"></img>
-        </div>
-        <div>
-          <img src={main10} alt="imagemain"></img>
-        </div>
-      </Slider>
+      <div class="slickcaro">
+        <Slider {...settings}>
+          <div>
+            <img src={main1} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main2} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main3} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main4} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main5} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main6} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main7} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main8} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main9} alt="imagemain"></img>
+          </div>
+          <div>
+            <img src={main10} alt="imagemain"></img>
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 }
