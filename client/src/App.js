@@ -49,10 +49,10 @@ function App() {
       {/* <Provider store={store}> */}
       <div className="page-container">
         <div className="content-wrap">
-          {" "}
+ 
           <Nav />
           <Routes>
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/Gallery" element={<Gallery />} />
