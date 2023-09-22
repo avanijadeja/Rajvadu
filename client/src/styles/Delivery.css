@@ -1,0 +1,8 @@
+.deliveryimages {
+  display: flex;
+  justify-content: center;
+}
+
+.deliveryimages img {
+  padding: 20px;
+}
