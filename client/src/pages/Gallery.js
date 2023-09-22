@@ -1,25 +1,18 @@
 import React from "react";
-import { AiFillLayout } from "react-icons/ai";
-import food1 from "../assets/food1.jpeg";
 import "../styles/Gallery.css";
+import { GalleryList } from "../helpers/GalleryList";
+import GalleryItem from "../components/GalleryItem";
 
 const Gallery = () => {
   return (
-    <>
-      <div className="Gallery">
-        <img src={food1} alt="food1" />
-        <div>
-          <h1 id="gallery">Gallery</h1>
-        </div>
+    <div className="gallery">
+      <h1 className="galleryTitle">Our Gallery</h1>
+      <div className="galleryList">
+        {MenuList.map((galleryItem, key) => {
+          return <GalleryItem key={key} image={galleryItem.image} />;
+        })}
       </div>
-      <div>
-        <h1> Gallery</h1>
-        <h1> Gallery</h1> <h1> Gallery</h1> <h1> Gallery</h1> <h1> Gallery</h1>{" "}
-        <h1> Gallery</h1> <h1> Gallery</h1> <h1> Gallery</h1> <h1> Gallery</h1>{" "}
-        <h1> Gallery</h1> <h1> Gallery</h1> <h1> Gallery</h1> <h1> Gallery</h1>{" "}
-        <h1> Gallery</h1>
-      </div>
-    </>
+    </div>
   );
 };
 
