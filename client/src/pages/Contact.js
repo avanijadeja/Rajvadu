@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { validateEmail } from "../../utils/helpers";
 import food6 from "../assets/food6.jpeg";
 import { FaCircleChevronDown } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
