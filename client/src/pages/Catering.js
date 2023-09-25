@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpes";
+import { validateEmail } from "../utils/helpes";
 import catering from "../assets/catering.png";
 import food5 from "../assets/food5.jpeg";
 import "../styles/Catering.css";
@@ -49,6 +49,7 @@ function Catering() {
   function handleSubmit(e) {
     e.preventDefault();
   }
+
   return (
     <div className="catering">
       <div
