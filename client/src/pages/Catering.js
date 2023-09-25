@@ -4,7 +4,7 @@ import catering from "../assets/catering.png";
 import food5 from "../assets/food5.jpeg";
 import "../styles/Catering.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
+// import DropdownButton from "react-bootstrap/DropdownButton";
 import { FaCircleChevronDown } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,6 +15,8 @@ function Catering() {
     phoneNumber: "",
     message: "",
   });
+
+  const [value, setValue] = React.useState("Type of Event");
 
   // Define useState for errorMessage, default value empty string
   const [errorMessage, setErrorMessage] = useState("");
@@ -50,6 +52,10 @@ function Catering() {
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
+  }
+
+  function handleChange(e) {
+    setValue(e.target.value);
   }
 
   // preventDefault function on submit
@@ -116,17 +122,13 @@ function Catering() {
               </div>
               <br></br>
               <div>
-                <DropdownButton
-                  id="dropdown-basic-button"
-                  title="Type of Event"
-                >
-                  <Dropdown.Item href="#/action-1">
-                    Birthday Party
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Wedding Event</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Office Party</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3"> Family Event</Dropdown.Item>
-                </DropdownButton>
+                <select value={value} onChange={handleChange}>
+                  <option value="Type of Event">Type of Event</option>
+                  <option value="Birthday Party">Birthday Party</option>
+                  <option value="Wedding Event">Wedding Event</option>
+                  <option value="Office Party">Office Party</option>
+                  <option value="Family Event">Family Event</option>
+                </select>
               </div>
               <br></br>
               <div>
