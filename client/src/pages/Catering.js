@@ -3,8 +3,7 @@ import { validateEmail, validatePhoneNumber } from "../utils/helpes";
 import catering from "../assets/catering.png";
 import food5 from "../assets/food5.jpeg";
 import "../styles/Catering.css";
-import Dropdown from "react-bootstrap/Dropdown";
-// import DropdownButton from "react-bootstrap/DropdownButton";
+
 import { FaCircleChevronDown } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -54,7 +53,7 @@ function Catering() {
     }
   }
 
-  function handleChange(e) {
+  function handleChange1(e) {
     setValue(e.target.value);
   }
 
@@ -122,7 +121,7 @@ function Catering() {
               </div>
               <br></br>
               <div>
-                <select value={value} onChange={handleChange}>
+                <select value={value} onChange={handleChange1}>
                   <option value="Type of Event">Type of Event</option>
                   <option value="Birthday Party">Birthday Party</option>
                   <option value="Wedding Event">Wedding Event</option>
