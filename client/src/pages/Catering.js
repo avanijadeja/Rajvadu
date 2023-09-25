@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { validateEmail } from "../utils/helpes";
+import { validateEmail, validatePhoneNumber } from "../utils/helpes";
 import catering from "../assets/catering.png";
 import food5 from "../assets/food5.jpeg";
 import "../styles/Catering.css";
@@ -29,6 +29,13 @@ function Catering() {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
         setErrorMessage("please enter a valid email");
+      } else {
+        setErrorMessage("");
+      }
+    } else if (e.target.name === "phoneNumber") {
+      const isValid = validatePhoneNumber(e.target.value);
+      if (!isValid) {
+        setErrorMessage("Please enter a valid phone Number");
       } else {
         setErrorMessage("");
       }
