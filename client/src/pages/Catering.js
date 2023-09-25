@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpes";
 import catering from "../assets/catering.png";
 import food5 from "../assets/food5.jpeg";
@@ -10,8 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Catering() {
   const [formState, setFormState] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phoneNumber: "",
     message: "",
@@ -21,7 +20,7 @@ function Catering() {
   const [errorMessage, setErrorMessage] = useState("");
 
   // destructure formState
-  const { firstName, lastName, email, phoneNumber, message } = formState;
+  const { name, email, phoneNumber, message } = formState;
 
   // define handleChange function for if field empty and not valid, Errormessage is display
   function handleChange(e) {
@@ -80,23 +79,14 @@ function Catering() {
               <div>
                 <input
                   type="text"
-                  defaultValue={firstname}
+                  defaultValue={name}
                   onBlur={handleChange}
-                  name="firstName"
-                  placeholder="First Name"
+                  name="Name"
+                  placeholder="Name"
                 />
               </div>
               <br></br>
-              <div>
-                <input
-                  type="text"
-                  defaultValue={lastname}
-                  onBlur={handleChange}
-                  name="lastName"
-                  placeholder="Last Name"
-                />
-              </div>
-              <br></br>
+
               <div>
                 <input
                   type="email"
