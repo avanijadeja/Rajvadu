@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import { validateEmail } from "../../utils/helpes";
 import catering from "../assets/catering.png";
 import food5 from "../assets/food5.jpeg";
 import "../styles/Catering.css";
@@ -8,6 +9,47 @@ import { FaCircleChevronDown } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Catering() {
+  const [formState, setFormState] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+  });
+
+  // Define useState for errorMessage, default value empty string
+  const [errorMessage, setErrorMessage] = useState("");
+
+  // destructure formState
+  const { firstName, lastName, email, phoneNumber, message } = formState;
+
+  // define handleChange function for if field empty and not valid, Errormessage is display
+  function handleChange(e) {
+    //  check for email , if email has invalid format or blank then pass error message.
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage("please enter a valid email");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
+    }
+
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  }
+
+  // preventDefault function on submit
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <div className="catering">
       <div
@@ -38,8 +80,8 @@ function Catering() {
               <div>
                 <input
                   type="text"
-                  // defaultValue={firstname}
-                  // onBlur={handleChange}
+                  defaultValue={firstname}
+                  onBlur={handleChange}
                   name="firstName"
                   placeholder="First Name"
                 />
@@ -48,8 +90,8 @@ function Catering() {
               <div>
                 <input
                   type="text"
-                  // defaultValue={lastname}
-                  // onBlur={handleChange}
+                  defaultValue={lastname}
+                  onBlur={handleChange}
                   name="lastName"
                   placeholder="Last Name"
                 />
@@ -58,9 +100,9 @@ function Catering() {
               <div>
                 <input
                   type="email"
-                  // defaultValue={email}
+                  defaultValue={email}
                   name="email"
-                  // onBlur={handleChange}
+                  onBlur={handleChange}
                   placeholder="Email Address"
                 />
               </div>
@@ -68,9 +110,9 @@ function Catering() {
               <div>
                 <input
                   type="phoneNumber"
-                  // defaultValue={phoneNumber}
+                  defaultValue={phoneNumber}
                   name="phoneNumber"
-                  // onBlur={handleChange}
+                  onBlur={handleChange}
                   placeholder="Phone Number"
                 />
               </div>
@@ -92,21 +134,21 @@ function Catering() {
               <div>
                 <textarea
                   name="Message"
-                  // defaultValue={message}
-                  // onBlur={handleChange}
+                  defaultValue={message}
+                  onBlur={handleChange}
                   placeholder="Pleae enter any items you are considering for this event.Be as detailed as you'd like*"
                   rows="6"
                 />
               </div>
               <br></br>
-              {/* {errorMessage && (
-                <div> */}
-              {/* display error message */}
-              {/* <p className="error-text">{errorMessage}</p>
+              {errorMessage && (
+                <div>
+                  {/* display error message */}
+                  <p className="error-text">{errorMessage}</p>
                 </div>
-              )} */}
+              )}
               {/* submit button for contact form - onsubmit handlesubmit called */}
-              <button type="submit" className="submit">
+              <button type="submit" className="submit" onSubmit={handleSubmit}>
                 Submit
               </button>
               <br></br>
@@ -116,7 +158,6 @@ function Catering() {
           </div>
 
           <div className="rightside">
-   
             <img src={catering} alt="catering"></img>
           </div>
         </div>
