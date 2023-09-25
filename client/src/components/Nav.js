@@ -4,6 +4,7 @@ import "../styles/Nav.css";
 import { Link } from "react-router-dom";
 
 function Nav() {
+
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -77,6 +78,7 @@ function Nav() {
         </div>
       );
     }
+  }
 
   //   return (
   //     <div class="Navbarcss">
