@@ -78,8 +78,8 @@ const Contact = () => {
               <br></br>
               <input
                 type="text"
-                // defaultValue={name}
-                // onBlur={handleChange}
+                defaultValue={name}
+                onBlur={handleChange}
                 name="Name"
                 placeholder="Please Enter Your Name"
               />
@@ -93,9 +93,9 @@ const Contact = () => {
               {/* input for email. onblur handlechange called */}
               <input
                 type="email"
-                // defaultValue={email}
+                defaultValue={email}
                 name="email"
-                // onBlur={handleChange}
+                onBlur={handleChange}
                 placeholder="Please Enter Your Email"
               />
             </div>
@@ -109,19 +109,19 @@ const Contact = () => {
               {/*  textarea for message , maximum rows 6 on onblur handlechange called */}
               <textarea
                 name="Message"
-                // defaultValue={message}
-                // onBlur={handleChange}
+                defaultValue={message}
+                onBlur={handleChange}
                 placeholder="Pleae Enter Your Message"
                 rows="6"
               />
             </div>
             <br></br>
-            {/* {errorMessage && (
-            <div> */}
-            {/* display error message */}
-            {/* <p className="error-text">{errorMessage}</p>
-            </div>
-          )} */}
+            {errorMessage && (
+              <div>
+                {/* display error message */}
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
             {/* submit button for contact form - onsubmit handlesubmit called */}
             <button type="submit" className="submit">
               Submit
