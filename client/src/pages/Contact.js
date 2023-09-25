@@ -56,14 +56,14 @@ const Contact = () => {
         <div className="backgroundHeader">
           <h3>Be in Touch</h3>
           <h1>Contact Us</h1>
-          <div class="icon">
+          <div className="icon">
             <a href="#contact">
               <FaCircleChevronDown size={70} color="white" />
             </a>
           </div>
         </div>
       </div>
-      <div class="contact" id="contact">
+      <div className="contact" id="contact">
         <br />
         <h1> GET IN TOUCH</h1>
         <br />
