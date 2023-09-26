@@ -1,17 +1,17 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import food4 from "../assets/food4.jpeg";
 import { FaCircleChevronDown } from "react-icons/fa6";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
-import panipuri from "../assets/panipuri.jpeg";
-import dosa from "../assets/dosa.jpeg";
-import samosa from "../assets/samosa.jpeg";
-import pavbhaji from "../assets/pavbhaji.jpeg";
-import dossa from "../assets/dossa.jpeg";
-import chole from "../assets/chole.jpeg";
+// import panipuri from "../assets/panipuri.jpeg";
+// import dosa from "../assets/dosa.jpeg";
+// import samosa from "../assets/samosa.jpeg";
+// import pavbhaji from "../assets/pavbhaji.jpeg";
+// import dossa from "../assets/dossa.jpeg";
+// import chole from "../assets/chole.jpeg";
 
 const Home = () => {
   var settings = {
@@ -74,7 +74,7 @@ const Home = () => {
         <br />
       </div>
 
-      <div class="slickcaro">
+      {/* <div class="slickcaro">
         <Slider {...settings}>
           <div>
             <img src={panipuri} alt="imagemain"></img>
@@ -95,7 +95,7 @@ const Home = () => {
             <img src={chole} alt="imagemain"></img>
           </div>
         </Slider>
-      </div>
+      </div> */}
     </div>
   );
 };
