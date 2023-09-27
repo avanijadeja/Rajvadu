@@ -1,31 +1,12 @@
 # E-commerce-shop
 
-e-commerce-shop uses Redux to manage global state.
+Rajvadu - The indian Restaurant using  Redux to manage global state.
 
 # Description
 
-In E-commerce-shop application,
+In Rajvadu application,
 
-## User Story
-
-- As a senior engineer working on an e-commerce platform,
-  I WANT my platform to use Redux to manage global state instead of the Context API,
-  SO THAT my website's state management is taken out of the React ecosystem.
-
-## Acceptance Criteria
-
-GIVEN an e-commerce platform that uses Redux to manage global state,
-
-- WHEN I review the app’s store,
-  THEN I find that the app uses a Redux store instead of the Context API.
-- WHEN I review the way the React front end accesses the store,
-  THEN I find that the app uses a Redux provider.
-- WHEN I review the way the app determines changes to its global state,
-  THEN I find that the app passes reducers to a Redux store instead of using the Context API.
-- WHEN I review the way the app extracts state data from the store,
-  THEN I find that the app uses Redux instead of the Context API.
-- WHEN I review the way the app dispatches actions.
-  THEN I find that the app uses Redux instead of the Context API.
+Customer can give their food order Online .
 
 # Table of Contents
 
@@ -44,17 +25,16 @@ GIVEN an e-commerce platform that uses Redux to manage global state,
 
 ![signup](./client/src/assets/images/signup.png)
 ![login](./client/src/assets/images/login.png)
-![electronics](./client/src/assets/images/electronics.png)
 ![food](./client/src/assets/images/food.png)
 ![checkout](./client/src/assets/images/checkout.png)
 ![aftercheckout](./client/src/assets/images/aftercheckout.png)
 ![orderhistory](./client/src/assets/images/orderhistory.png)
 
-![EcommerceDemo](./client/src/assets/images/ecommerce.gif)
 
-The URL of the functional, deployed application - https://scenic-death-valley-72867-8012c567f6fe.herokuapp.com/
 
-The URL of the GitHub repository - https://github.com/avanijadeja/E-commerce-shop
+The URL of the functional, deployed application - 
+
+The URL of the GitHub repository - 
 
 # License
 
