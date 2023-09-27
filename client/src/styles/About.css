@@ -17,11 +17,16 @@
 .slickcaro {
   /* display: flex; */
   /* flex-direction: row;
-  flex-wrap: wrap; */
+    flex-wrap: wrap; */
   padding: 20px;
   align-items: center;
 }
 img {
   width: 250px;
   height: 250px;
+}
+
+.cart img {
+  height: 50px;
+  width: 50px;
 }

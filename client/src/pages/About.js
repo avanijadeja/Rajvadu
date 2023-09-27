@@ -4,19 +4,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/About.css";
 
-import food1 from "../assets/food1.jpeg";
+import cover3 from "../assets/images/cover3.jpeg";
 import { FaCircleChevronDown } from "react-icons/fa6";
 
-import main1 from "../assets/main1.jpeg";
-import main2 from "../assets/main2.jpeg";
-import main3 from "../assets/main3.jpeg";
-import main4 from "../assets/main4.jpeg";
-import main5 from "../assets/main5.jpeg";
-import main6 from "../assets/main6.jpeg";
-import main7 from "../assets/main7.jpeg";
-import main8 from "../assets/main8.jpeg";
-import main9 from "../assets/main9.jpeg";
-import main10 from "../assets/main10.jpeg";
+import main1 from "../assets/images/main1.jpeg";
+import main2 from "../assets/images/main2.jpeg";
+import main3 from "../assets/images/main3.jpeg";
+import main4 from "../assets/images/main4.jpeg";
+import main5 from "../assets/images/main5.jpeg";
+import main6 from "../assets/images/main6.jpeg";
+import main7 from "../assets/images/main7.jpeg";
+import main8 from "../assets/images/main8.jpeg";
+import main9 from "../assets/images/main9.jpeg";
+import main10 from "../assets/images/main10.jpeg";
 function About() {
   var settings = {
     dots: true,
@@ -33,7 +33,7 @@ function About() {
     <div className="about">
       <div
         className="backgroundTop"
-        style={{ backgroundImage: `url(${food1})` }}
+        style={{ backgroundImage: `url(${cover3})` }}
       >
         <div className="backgroundHeader">
           <h3>Discover</h3>
@@ -47,7 +47,11 @@ function About() {
       </div>
       <div class="aboutimages" id="aboutimages">
         <div>
-          <h1>Come and experience Yourself</h1>
+          <br />
+          <br />
+          <br />
+          <hr />
+          <h1>About Us</h1>
           <hr />
         </div>
         <h4>

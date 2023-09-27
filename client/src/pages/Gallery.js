@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Gallery.css";
-import food1 from "../assets/food1.jpeg";
+import food1 from "../assets/images/cover6.jpeg";
 import { FaCircleChevronDown } from "react-icons/fa6";
 import { GalleryList } from "../helpers/GalleryList";
 import GalleryItem from "../components/GalleryItem";
@@ -22,9 +22,18 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <h1 className="galleryTitle" id="galleryimages">
-        Our Tasty Food
-      </h1>
+      <div>
+        <br />
+        <br />
+        <br />
+        <hr />
+        <h1 className="galleryTitle" id="galleryimages">
+          Our Tasty Food
+        </h1>
+        <hr />
+      </div>
+      <br></br>
+      <br></br>
       <div className="galleryList">
         {GalleryList.map((galleryItem, key) => {
           return <GalleryItem key={key} image={galleryItem.image} />;

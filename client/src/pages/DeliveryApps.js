@@ -1,9 +1,9 @@
 import React from "react";
-import food2 from "../assets/food1.jpeg";
-import doordash from "../assets/doordash.jpg";
-import grubhub from "../assets/grubhub.jpg";
-import seamless from "../assets/seamless.jpg";
-import ubereats from "../assets/ubereats.jpg";
+import food2 from "../assets/images/cover4.jpeg";
+import doordash from "../assets/images/doordash.jpg";
+import grubhub from "../assets/images/grubhub.jpg";
+import seamless from "../assets/images/seamless.jpg";
+import ubereats from "../assets/images/ubereats.jpg";
 import { FaCircleChevronDown } from "react-icons/fa6";
 import "../styles/Delivery.css";
 const DeliveryApps = () => {
@@ -23,12 +23,16 @@ const DeliveryApps = () => {
           </div>
         </div>
       </div>
+      <br />
 
+      <br />
       <div class="deliveryimages" id="deliveryimages">
         <img src={doordash} alt="imagemain"></img>
         <img src={grubhub} alt="imagemain"></img>
         <img src={seamless} alt="imagemain"></img>
         <img src={ubereats} alt="imagemain"></img>
+        <br />
+        <br />
       </div>
     </div>
   );

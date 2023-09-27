@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpes";
-import food6 from "../assets/food6.jpeg";
+import food6 from "../assets/images/cover2.jpeg";
 import { FaCircleChevronDown } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Contact.css";
@@ -123,7 +123,7 @@ const Contact = () => {
               </div>
             )}
             {/* submit button for contact form - onsubmit handlesubmit called */}
-            <button type="submit" className="submit" onSubmit={handleSubmit}>
+            <button type="submit" class="btn btn-dark" onSubmit={handleSubmit}>
               Submit
             </button>
             <br></br>

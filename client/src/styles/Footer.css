@@ -1,6 +1,6 @@
 .main-footer {
-  color: Red;
-  background-color: black;
+  color: var(--error);
+  background-color: var(--dark);
   padding-top: 3em;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ li {
   text-decoration: none;
   display: block;
   text-align: center;
-  color: pink;
+  color: var(--light);
 }
 
 .col-sm {

@@ -1,10 +1,14 @@
 import React from "react";
+import ProductList from "../components/ProductList";
+import CategoryMenu from "../components/CategoryMenu";
+import Cart from "../components/Cart";
 
-const OnlineOrder= () => {
+const OnlineOrder = () => {
   return (
-    <div>
-      <h1>OnlineOrder</h1>
-      
+    <div className="container" id="OnlineOrder">
+      <CategoryMenu />
+      <ProductList />
+      <Cart />
     </div>
   );
 };

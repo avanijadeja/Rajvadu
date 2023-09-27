@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   ApolloClient,
@@ -12,17 +11,20 @@ import { Provider } from "react-redux";
 import store from "./utils/store";
 
 import Home from "./pages/Home";
-import NoMatch from "./pages/NoMatch";
-import About from "./pages/About";
-import Gallery from "./pages/Gallery";
-import OnlineOrder from "./pages/OnlineOrder";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-
-import DeliveryApps from "./pages/DeliveryApps";
-import Catering from "./pages/Catering";
 import Contact from "./pages/Contact";
-
+import About from "./pages/About";
+import Catering from "./pages/Catering";
+import OnlineOrder from "./pages/OnlineOrder";
+import Detail from "./pages/Detail";
+import Gallery from "./pages/Gallery";
+import DeliveryApps from "./pages/DeliveryApps";
+import NoMatch from "./pages/NoMatch";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Nav from "./components/Nav";
+import Success from "./pages/Success";
+import OrderHistory from "./pages/OrderHistory";
+import Footer from "./components/Footer";
 const httpLink = createHttpLink({
   uri: "/graphql",
 });
@@ -48,28 +50,27 @@ function App() {
       <Router>
         <div>
           <Provider store={store}>
-            <div className="page-container">
-              <div className="content-wrap">
-                <Nav />
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/About" element={<About />} />
-                  <Route path="/Gallery" element={<Gallery />} />
-                  <Route path="/Gallery" element={<Gallery />} />
-                  <Route path="/OnlineOrder" element={<OnlineOrder />} />
-                  <Route path="/DeliveryApps" element={<DeliveryApps />} />
-                  <Route path="/Catering" element={<Catering />} />
-                  <Route path="/Contact" element={<Contact />} />
-                  <Route path="*" element={<NoMatch />} />
-                </Routes>
-              </div>
-            </div>
+            <Nav />
+            <Routes>
+              <Route path="/OnlineOrder" element={<OnlineOrder />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/About" element={<About />} />
+              <Route path="/Catering" element={<Catering />} />
+              <Route path="/Gallery" element={<Gallery />} />
+              <Route path="/DeliveryApps" element={<DeliveryApps />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/success" element={<Success />} />
+              <Route path="/orderHistory" element={<OrderHistory />} />
+              <Route path="/products/:id" element={<Detail />} />
+              <Route path="*" element={<NoMatch />} />
+            </Routes>
           </Provider>
 
           <Footer />
         </div>
       </Router>
-      //{" "}
     </ApolloProvider>
   );
 }

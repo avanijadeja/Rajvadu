@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail, validatePhoneNumber } from "../utils/helpes";
-import catering from "../assets/catering.png";
-import food5 from "../assets/food5.jpeg";
+import catering from "../assets/images/catering.png";
+import food5 from "../assets/images/cover5.jpeg";
 import "../styles/Catering.css";
 
 import { FaCircleChevronDown } from "react-icons/fa6";
@@ -78,6 +78,7 @@ function Catering() {
           </div>
         </div>
       </div>
+      <br></br>
       <div class="cateringimages" id="cateringimages">
         <div className="cateringHead">
           <h1> GET YOUR QUOTATION</h1>
@@ -147,7 +148,11 @@ function Catering() {
                 </div>
               )}
               {/* submit button for contact form - onsubmit handlesubmit called */}
-              <button type="submit" className="submit" onSubmit={handleSubmit}>
+              <button
+                type="submit"
+                class="btn btn-dark"
+                onSubmit={handleSubmit}
+              >
                 Submit
               </button>
               <br></br>

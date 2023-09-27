@@ -8,11 +8,11 @@
 }
 
 /* .about {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-} */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  } */
 
 .galleryTop {
   opacity: 80%;
@@ -88,9 +88,9 @@
 }
 
 /* .galleryItem h1,
-.galleryItem p {
-  margin-left: 20px;
-} */
+  .galleryItem p {
+    margin-left: 20px;
+  } */
 
 @media only screen and (max-width: 1300px) {
   .galleryList {
