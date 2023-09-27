@@ -31,11 +31,11 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div className="container my-1" >
       <Link to="/login">← Go to Login</Link>
 
       <h2>Signup</h2>
-      <form onSubmit={handleFormSubmit}>
+      <form onSubmit={handleFormSubmit} id="signup">
         <div className="flex-row space-between my-2">
           <label htmlFor="firstName">First Name:</label>
           <input

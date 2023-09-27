@@ -82,3 +82,7 @@ body {
   align-items: center;
 }
 
+#loginForm,
+#signup {
+  min-height: 60vh;
+}
